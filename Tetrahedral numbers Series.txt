@@ -1,9 +1,31 @@
-void printSeries(int n) 
-{  
-  for (int i = 1; i <= n; i++) 
-    {  
-        int num = i * (i + 1) * (i + 2) / 6; 
-        cout << num << " "; 
-    } 
-} 
-  
+void printSeries(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int num = i * (i + 1) * (i + 2) / 6;
+        cout << num << " ";
+    }
+}
+
+int printSeriesSum(int n)
+{
+  int sum=0;
+  for (int i = 1; i <= n; i++)
+    {
+        int num = i * (i + 1) * (i + 2) / 6;
+        sum=sum+num;
+
+    }
+ return sum;
+}
+
+int nTH_term(int n)
+{
+  int num = n * (n + 1) * (n + 2) / 6;
+  return num;
+}
+
+int sumOftwoTerm(int l,int r){
+   int s=nTH_term(l)+nTH_term(r);
+   return s;
+}
