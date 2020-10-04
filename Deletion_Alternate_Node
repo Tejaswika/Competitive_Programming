@@ -12,5 +12,6 @@ void deleteAlt(struct Node *head)
 		prev = prev->next; 
 		if (prev != NULL) 
 			node = prev->next; 
-	} 
+	
+  } 
 } 
